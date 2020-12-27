@@ -5,7 +5,7 @@ const galleryListRef = document.querySelector('ul.js-gallery');
 const largeImgRef = document.querySelector('.lightbox__image');
 const modalRef = document.querySelector('.js-lightbox');
 const closeBtnRef = document.querySelector('button[data-action="close-lightbox"]', );
- const overlayRef = document.querySelector('.lightbox__overlay');
+const overlayRef = document.querySelector('.lightbox__overlay');
 
 
 galleryListRef.addEventListener('click', onOpenModal);
@@ -45,7 +45,6 @@ renderListItems(galleryItems);
 function onOpenModal(event) {
 event.preventDefault();
 window.addEventListener('keydown', onPressEscape);
-console.log(event.target.nodeName);
 
 if (event.target.nodeName !== 'IMG') {
     return;
